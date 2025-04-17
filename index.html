@@ -1,210 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Roblox Style Portal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background: linear-gradient(135deg, #1a0000, #330000);
-      height: 100vh;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 400px;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-      background-color: #2e0d0d;
-      animation: fadeIn 0.6s ease-out;
-    }
-
-    h2 {
-      color: #ff4d4d;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    input {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 8px;
-      background: #4d1a1a;
-      color: #fff;
-    }
-
-    input:focus {
-      outline: 2px solid #ff4d4d;
-      background: #5c1f1f;
-    }
-
-    button {
-      width: 48%;
-      margin: 8px 1%;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .login-btn {
-      background: #ff4d4d;
-      color: white;
-    }
-
-    .login-btn:hover {
-      background: #e63946;
-    }
-
-    .signup-btn {
-      background: #333;
-      color: #ffbaba;
-    }
-
-    .signup-btn:hover {
-      background: #444;
-    }
-
-    .error-message {
-      color: #ff7b7b;
-      display: none;
-      margin-top: 10px;
-      text-align: center;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .profile {
-      text-align: center;
-    }
-
-    .link-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #444;
-      color: white;
-      text-decoration: none;
-      border-radius: 12px;
-      padding: 14px;
-      margin: 12px 0;
-      font-size: 18px;
-      transition: background 0.3s;
-    }
-
-    .link-button img {
-      width: 24px;
-      height: 24px;
-      margin-right: 12px;
-    }
-
-    .link-button:hover {
-      background-color: #666;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Epicman58's Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111;
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 10px #ff0000;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff3c3c;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.7);
+        }
+        .button img {
+            height: 24px;
+            width: 24px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container" id="auth-section">
-    <h2>Welcome Back</h2>
-    <input type="text" id="username" placeholder="Username" />
-    <input type="password" id="password" placeholder="Password" />
-    <div>
-      <button class="login-btn" onclick="login()">Login</button>
-      <button class="signup-btn" onclick="signup()">Sign Up</button>
+    <h1>Welcome to Epicman58's Hub</h1>
+    <a href="https://www.youtube.com/@ZyraBloxx" class="button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"> YouTube Channel
+    </a>
+    <a href="https://www.roblox.com/users/8322851763/profile?friendshipSourceType=PlayerSearch" class="button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Roblox_Logo_2022.svg" alt="Roblox" style="height:20px;"> Roblox Profile
+    </a>
+    <div class="button">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok"> TikTok (Coming Soon!)
     </div>
-    <p class="error-message" id="error">Invalid credentials or user already exists.</p>
-  </div>
-
-  <div class="container hidden" id="profile-section">
-    <div class="profile">
-      <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
-      <p>Check out my awesome profiles:</p>
-      <a class="link-button" href="https://roblox.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Roblox Icon" />
-        Visit my Roblox Profile
-      </a>
-      <a class="link-button" href="https://tiktok.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok Icon" />
-        Watch my TikTok Videos
-      </a>
-      <a class="link-button" href="https://youtube.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon" />
-        Subscribe on YouTube
-      </a>
-    </div>
-  </div>
-
-  <script>
-    const authSection = document.getElementById("auth-section");
-    const profileSection = document.getElementById("profile-section");
-    const error = document.getElementById("error");
-
-    function displayProfile(user) {
-      document.getElementById("usernameDisplay").textContent = user;
-      authSection.classList.add("hidden");
-      profileSection.classList.remove("hidden");
-    }
-
-    function login() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-      const savedUsers = JSON.parse(localStorage.getItem("users")) || {};
-
-      if (savedUsers[user] === pass) {
-        localStorage.setItem("loggedInUser", user);
-        displayProfile(user);
-      } else {
-        error.style.display = "block";
-        error.textContent = "Incorrect username or password.";
-      }
-    }
-
-    function signup() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-      const savedUsers = JSON.parse(localStorage.getItem("users")) || {};
-
-      if (user in savedUsers) {
-        error.style.display = "block";
-        error.textContent = "Username already taken.";
-      } else {
-        savedUsers[user] = pass;
-        localStorage.setItem("users", JSON.stringify(savedUsers));
-        localStorage.setItem("loggedInUser", user);
-        displayProfile(user);
-      }
-    }
-
-    // Auto-login if already signed in
-    const currentUser = localStorage.getItem("loggedInUser");
-    if (currentUser) {
-      displayProfile(currentUser);
-    }
-  </script>
 </body>
 </html>
