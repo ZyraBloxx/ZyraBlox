@@ -2,107 +2,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ZyraBloxx's Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Orbitron', sans-serif;
-            color: #ffffff;
-            overflow: hidden;
-            background: linear-gradient(-45deg, #000000, #1c1c1c, #2c2c2c, #1c1c1c);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-        }
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 10px #ff1e56;
-        }
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #ff1e56;
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px #ff1e56;
-        }
-        .button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #ff1e56;
-            border: none;
-            color: white;
-            padding: 15px 30px;
-            margin: 10px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 1.3rem;
-            box-shadow: 0 4px 20px rgba(255, 30, 86, 0.6);
-            transition: transform 0.2s, box-shadow 0.2s;
-            width: 300px;
-        }
-        .button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 25px rgba(255, 30, 86, 0.9);
-        }
-        .button img {
-            height: 28px;
-            width: 28px;
-            margin-right: 12px;
-        }
-        audio {
-            display: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZyraBloxx's Official Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1604079628043-d354c2b6e8d4?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.65);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 600px;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #ff4757;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #ff4757;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #ff4757;
+      padding: 15px 25px;
+      margin: 10px auto;
+      width: 100%;
+      max-width: 300px;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background: #ff6b81;
+      transform: scale(1.05);
+    }
+
+    .button img {
+      height: 28px;
+      width: 28px;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .button {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://yt3.googleusercontent.com/HmzOdtoDNprLs_NgZx8kda7_OfGZDB7GZQ-czKLmdo4ya5FY6ydMB3-vxNe2OajdyPSKGSKO2Q=s176-c-k-c0x00ffffff-no-rj" alt="Profile" class="profile-pic">
-        <h1>Welcome to zyrablox's website!</h1>
-        <a href="https://www.youtube.com/@ZyraBloxx" class="button" target="_blank" onmouseover="playSound('hover')">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"> YouTube Channel
-        </a>
-        <a href="https://www.roblox.com/users/8322851763/profile?friendshipSourceType=PlayerSearch" class="button" target="_blank" onmouseover="playSound('hover')">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Roblox_Logo_2022.svg" alt="Roblox" style="height:22px;"> Roblox Profile
-        </a>
-        <div class="button" onmouseover="playSound('hover')">
-            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok"> TikTok (Coming Soon!)
-        </div>
-    </div>
+  <div class="overlay"></div>
+  <div class="container">
+    <img class="profile-pic" src="https://yt3.googleusercontent.com/HmzOdtoDNprLs_NgZx8kda7_OfGZDB7GZQ-czKLmdo4ya5FY6ydMB3-vxNe2OajdyPSKGSKO2Q=s176-c-k-c0x00ffffff-no-rj" alt="ZyraBloxx Profile" />
+    <h1>Welcome to ZyraBloxx's Website!</h1>
+    <a class="button" href="https://www.youtube.com/@ZyraBloxx" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /> YouTube Channel
+    </a>
+    <a class="button" href="https://www.roblox.com/users/8322851763/profile?friendshipSourceType=PlayerSearch" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Roblox_player_icon_2022.svg" alt="Roblox" /> Roblox Profile
+    </a>
+    <a class="button" href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok" /> TikTok (Coming Soon!)
+    </a>
+  </div>
 
-    <audio id="hover-sound" src="https://www.myinstants.com/media/sounds/button-click.mp3"></audio>
-    <audio autoplay loop>
-        <source src="https://files.catbox.moe/nvn5qa.mp3" type="audio/mp3">
-    </audio>
-
-    <script>
-        function playSound(type) {
-            if (type === 'hover') {
-                const sound = document.getElementById('hover-sound');
-                sound.currentTime = 0;
-                sound.play();
-            }
-        }
-    </script>
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/7z3ycs.mp3" type="audio/mp3">
+  </audio>
 </body>
 </html>
