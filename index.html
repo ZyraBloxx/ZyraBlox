@@ -11,20 +11,9 @@
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-      overflow: hidden;
-      color: #fff;
-    }
-    .stars {
-      width: 100%;
-      height: 100%;
-      background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') repeat;
+      background: url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a?fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      opacity: 0.3;
+      color: #fff;
     }
     .content {
       position: relative;
@@ -36,6 +25,7 @@
       height: 100vh;
       text-align: center;
       padding: 2rem;
+      backdrop-filter: blur(5px);
     }
     .avatar {
       width: 140px;
@@ -95,24 +85,23 @@
   </style>
 </head>
 <body>
-  <div class="stars"></div>
   <div class="content">
     <img class="avatar" src="data:image/png;base64," alt="ZyraBloxx" />
     <h1>Welcome to ZyraBloxx's Website!</h1>
     <p>Official hub of Roblox streamer ZyraBloxx 🎮✨</p>
     <a class="btn" href="https://www.youtube.com/@ZyraBloxx" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YT" /> YouTube Channel
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Youtube%28amin%29.png" alt="YT" /> YouTube Channel
     </a>
     <a class="btn" href="https://www.roblox.com/users/8322851763/profile?friendshipSourceType=PlayerSearch" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Roblox_player_icon_2022.svg" alt="Roblox" /> Roblox Profile
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Roblox_logo_2022.svg" alt="Roblox" /> Roblox Profile
     </a>
     <a class="btn" href="#">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok" /> TikTok (Coming Soon!)
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg" alt="TikTok" /> TikTok (Coming Soon!)
     </a>
   </div>
 
   <audio autoplay loop>
-    <source src="data:audio/mp3;base64," type="audio/mp3">
+    <source src="https://cdn.pixabay.com/audio/2022/03/03/audio_959f373b50.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 </body>
