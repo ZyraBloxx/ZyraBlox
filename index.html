@@ -4,105 +4,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZyraBloxx | Official Roblox Streamer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <title>ZyraBloxx's Website</title>
   <style>
-    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      font-family: 'Arial', sans-serif;
+      background: url('c7f4b7922cad40cd75fb214a63bec12d.gif') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
-    }
-    .content {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      color: #00ffff;
       text-align: center;
-      padding: 2rem;
-      backdrop-filter: blur(5px);
-    }
-    .avatar {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid #ff4757;
-      box-shadow: 0 0 20px #ff4757;
-      margin-bottom: 1rem;
+      padding: 40px 10px;
     }
     h1 {
-      font-size: 2.8rem;
-      color: #ff6b81;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #00ffff;
     }
-    p {
-      font-size: 1.2rem;
-      color: #dcdcdc;
-      margin-bottom: 2rem;
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 10px #00ffff;
     }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #ff4757;
-      color: #fff;
-      padding: 14px 24px;
-      margin: 10px;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 40px;
+    .link-button {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid #00ffff;
+      border-radius: 30px;
+      padding: 15px 25px;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 320px;
+      color: #00ffff;
       text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px #00ffff;
       transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(255,71,87,0.4);
     }
-    .btn:hover {
-      background-color: #ff6b81;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(255,71,87,0.6);
-    }
-    .btn img {
-      width: 24px;
-      height: 24px;
-      margin-right: 10px;
-    }
-    audio {
-      display: none;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .btn {
-        font-size: 1rem;
-      }
+    .link-button:hover {
+      background-color: rgba(0, 255, 255, 0.15);
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffff;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <img class="avatar" src="https://yt3.googleusercontent.com/Wz9YkYrZpR9L3ZmCVrJ4XUO6PYBR-ycA54NbdDnheYmS2_l3g0PTipJ6HXZiI1EyNjIkYkMn=s176-c-k-c0x00ffffff-no-rj" alt="ZyraBloxx" />
-    <h1>Welcome to ZyraBloxx's Website!</h1>
-    <p>Official hub of Roblox streamer ZyraBloxx 🎮✨</p>
-    <a class="btn" href="https://www.youtube.com/@ZyraBloxx" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YT" /> YouTube Channel
-    </a>
-    <a class="btn" href="https://www.roblox.com/users/8322851763/profile?friendshipSourceType=PlayerSearch" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Roblox_Logo_2022.svg" alt="Roblox" /> Roblox Profile
-    </a>
-    <a class="btn" href="#">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg" alt="TikTok" /> TikTok (Coming Soon!)
-    </a>
-  </div>
+  <img class="profile-img" src="image-proxy.png" alt="ZyraBloxx PFP" />
+  <h1>Zyra's official Site!</h1>
 
-  <audio autoplay loop>
-    <source src="https://cdn.pixabay.com/audio/2022/03/03/audio_959f373b50.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
+  <a class="link-button" href="https://www.youtube.com/@ZyraBloxx" target="_blank">YouTube</a>
+  <a class="link-button" href="https://www.roblox.com/users/8322851763/profile?friendshipSourceType=PlayerSearch" target="_blank">Roblox</a>
+  <div class="link-button">TikTok (Coming Soon!)</div>
 </body>
 </html>
