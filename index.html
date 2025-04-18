@@ -3,60 +3,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZyraBloxx's Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zyra's Official Site</title>
   <style>
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: url('c7f4b7922cad40cd75fb214a63bec12d.gif') no-repeat center center fixed;
-      background-size: cover;
-      color: #00ffff;
       text-align: center;
-      padding: 40px 10px;
+      background-image: url('background.gif');
+      background-size: cover;
+      background-position: center;
+      color: cyan;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 30px;
-      text-shadow: 0 0 10px #00ffff;
-    }
+
     .profile-img {
       width: 150px;
+      height: 150px;
       border-radius: 50%;
-      margin-bottom: 20px;
-      border: 3px solid #00ffff;
-      box-shadow: 0 0 10px #00ffff;
+      margin-top: 30px;
+      box-shadow: 0 0 20px cyan;
     }
-    .link-button {
+
+    h1 {
+      font-size: 3em;
+      margin: 20px 0;
+      text-shadow: 0 0 10px cyan;
+    }
+
+    .button {
       display: block;
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 2px solid #00ffff;
-      border-radius: 30px;
-      padding: 15px 25px;
-      margin: 15px auto;
-      width: 80%;
-      max-width: 320px;
-      color: #00ffff;
-      text-decoration: none;
-      font-size: 1.2em;
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid cyan;
+      border-radius: 40px;
+      background-color: transparent;
+      color: cyan;
+      font-size: 1.5em;
       font-weight: bold;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 15px #00ffff;
-      transition: all 0.3s ease;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 20px cyan;
     }
-    .link-button:hover {
-      background-color: rgba(0, 255, 255, 0.15);
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #00ffff;
+
+    .button:hover {
+      background-color: rgba(0, 255, 255, 0.1);
+      box-shadow: 0 0 30px cyan;
+    }
+
+    a {
+      color: cyan;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: cyan;
     }
   </style>
 </head>
 <body>
-  <img class="profile-img" src="image-proxy.png" alt="ZyraBloxx PFP" />
+  <img src="pfp.png" alt="ZyraBloxx PFP" class="profile-img" />
   <h1>Zyra's official Site!</h1>
-
-  <a class="link-button" href="https://www.youtube.com/@ZyraBloxx" target="_blank">YouTube</a>
-  <a class="link-button" href="https://www.roblox.com/users/8322851763/profile?friendshipSourceType=PlayerSearch" target="_blank">Roblox</a>
-  <div class="link-button">TikTok (Coming Soon!)</div>
+  <a href="https://www.youtube.com/@ZyraBloxx" class="button">YouTube</a>
+  <a href="https://www.roblox.com/users/1490965726/profile" class="button">Roblox</a>
+  <a class="button">TikTok (Coming Soon!)</a>
 </body>
 </html>
